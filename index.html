@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/me.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name">Ben mbarka <br />monteha</h1>
+
+            <p class="title">Full stack developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >Benmbarkamonteha@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+216 27472629</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Zaghouane-Tunisia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/monteha-ben-mbarka/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/benmbarkamonteha" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            I am a Full Stack Web Developer specializing in web application
+            development and creating intuitive, modern user interfaces.
+            Currently in my final year of studies in Information Systems
+            Development at ISET Bizerte, I have gained solid expertise in Java,
+            Angular, Spring Boot, NodeJS and other cutting-edge technologies
+            through ambitious projects and hands-on training.
+
+            <p>
+              My passion lies in designing innovative and functional solutions,
+              such as a babysitting platform and a job search tool, aimed at
+              improving user experience while meeting operational needs.
+            </p>
+            <p>
+              These experiences have allowed me to collaborate with dynamic
+              teams, manage end-to-end projects, and deliver high-quality
+              products. Throughout my journey, I have demonstrated leadership
+              and creativity, particularly by leading collaborative projects,
+              such as my Full Stack certification project, which earned a grade
+              of 17/20, and by developing original ideas through my small
+              business, Stickers by Monta.
+            </p>
+
+            My goal is to leverage my technical skills and creativity to develop
+            web projects that combine aesthetics with performance, delivering
+            real value to users and businesses alike.
+          </section>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        --></article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <iframe
+              src="assets/images/Monteha_Ben mbarka_eng.pdf"
+              width="600"
+              height="800"
+            ></iframe>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+            </div>
+            <h2 class="projectname">Nanny web Applications &#x1F476;</h2>
+       
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <figure class="project-img">
+                  <img
+                    src="./assets/images/nanny (1).png"
+                    alt="finance"
+                    loading="lazy"
+                  />
+                </figure>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <figure class="project-img">
+                  <img
+                    src="./assets/images/nanny (2).png"
+                    alt="orizon"
+                    loading="lazy"
+                  />
+                </figure>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <figure class="project-img">
+                  <img
+                    src="./assets/images/nanny.png"
+                    alt="fundo"
+                    loading="lazy"
+                  />
+                </figure>
+              </li>
+            </ul>
+
+           
+             <h2 class="projectname">InterviewPro Applications &#x1F4BC;</h2>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <figure class="project-img">
+                  <img
+                    src="./assets/images/interviewpro (1).png"
+                    alt="brawlhalla"
+                    loading="lazy"
+                  />
+                </figure>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <figure class="project-img">
+                  <img
+                    src="./assets/images/interviewpro (2).png"
+                    alt="dsm."
+                    loading="lazy"
+                  />
+                </figure>
+              </li>
+            </ul>
+
+            <h2 class="projectname">BiblioSmart &#x1F4DA;</h2>
+      
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <figure class="project-img">
+                  <img
+                    src="./assets/images/flutter.png"
+                    alt="brawlhalla"
+                    loading="lazy"
+                  />
+                </figure>
+              </li>
+            </ul>
+
+              <h2 class="projectname">FORUM  &#x1F4DA;</h2>
+      
+              <ul class="project-list">
+                <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="applications"
+                >
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/Capture d’écran (718).png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+                </li>
+                <figure class="project-img">
+                  <img
+                    src="./assets/images/Capture d’écran (720).png"
+                    alt="brawlhalla"
+                    loading="lazy"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
